@@ -26,5 +26,5 @@ Start a UDP listener on port 8888
 ### Flags
 
 `-l` - Start listener (default false)  
-`-p` - Port to start listener on (default 8080)  
 `-u` - Use UDP (default false - uses TCP)  
+`--port`, `-p` - Port to start listener on (default 8080) 
