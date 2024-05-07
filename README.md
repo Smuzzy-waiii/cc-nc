@@ -23,8 +23,19 @@ Start a UDP listener on port 8888
 ./ccnc -l -u -p 8888
 ```
 
+Try connecting to a single port
+```shell
+./ccnc -z localhost 8080
+```
+
+Try connecting to a range of ports
+```shell
+./ccnc -z localhost 8000-9000
+```
+
 ### Flags
 
 `-l` - Start listener (default false)  
 `-u` - Use UDP (default false - uses TCP)  
-`--port`, `-p` - Port to start listener on (default 8080) 
+`--port`, `-p` - Port to start listener on (default 8080)  
+`-z` - Try establishing connecting with a port or range of ports (boolean flag) (Check Examples for usage)
